@@ -17,7 +17,7 @@ data class Data(
     @SerializedName("homepage")
     val homepage: String? = "",
     @SerializedName("id")
-    val id: String? = "",
+    val id: Int? = null,
     @SerializedName("imdb_id")
     val imdbId: String? = "",
     @SerializedName("original_language")
@@ -25,7 +25,7 @@ data class Data(
     @SerializedName("original_title")
     val originalTitle: String? = "",
     @SerializedName("overview")
-    val overview: String? = "",
+    val description: String? = "",
     @SerializedName("popularity")
     val popularity: Double? = 0.0,
     @SerializedName("poster_path")

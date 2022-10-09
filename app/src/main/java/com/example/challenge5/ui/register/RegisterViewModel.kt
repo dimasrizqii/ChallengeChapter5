@@ -8,8 +8,7 @@ import com.example.challenge5.data.entity.AccountEntity
 import kotlinx.coroutines.launch
 
 class RegisterViewModel (
-    val database : AccountDao, application: Application
-) : AndroidViewModel(application) {
+    val database : AccountDao, application: Application) : AndroidViewModel(application) {
     fun insertAccount(account: AccountEntity) {
         viewModelScope.launch {
             getDataFromDatabase(account)

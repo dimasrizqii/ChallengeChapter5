@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.challenge5.data.dao.AccountDao
+import com.example.challenge5.ui.profile.ProfileViewModel
 import com.example.challenge5.ui.register.RegisterViewModel
 
 class LoginViewModelFactory(
@@ -17,6 +18,9 @@ class LoginViewModelFactory(
         }
         if (modelClass.isAssignableFrom(RegisterViewModel::class.java)){
             return RegisterViewModel(dataSource, application) as T
+        }
+        if (modelClass.isAssignableFrom(ProfileViewModel::class.java)){
+            return ProfileViewModel(dataSource, application) as T
         }
         throw IllegalArgumentException("Unknown ViewModel Class")
     }

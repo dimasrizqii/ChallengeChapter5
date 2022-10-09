@@ -16,5 +16,9 @@ data class AccountEntity (
     @ColumnInfo(name = "email")
     var email: String? = "",
     @ColumnInfo(name = "password")
-    var password: String?
+    var password: String? = "",
+    @ColumnInfo(name = "full_name")
+    var fullName: String? = "",
+    @ColumnInfo(name = "address")
+    var address: String? = ""
 ) : Parcelable

@@ -16,11 +16,21 @@
         <LinearLayout
             style="@style/WidthParentAndHeightContent"
             android:orientation="vertical">
-        
+
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/tv_welcome"
                 style="@style/WrapContent"
                 android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/welcome_home"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_popular"
+                style="@style/WrapContent"
+                android:layout_marginTop="12dp"
                 android:layout_marginStart="16dp"
                 android:text="@string/popular_movies"
                 android:textSize="24sp"

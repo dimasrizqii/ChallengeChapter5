@@ -17,4 +17,10 @@
     <string name="popular_movies">Popular Movies</string>
     <string name="lorem_ipsum" translatable="false">Lorem ipsum dolor sit amet odio dicunt repudiandae repudiandae eos mauris corrumpit impedit donec iusto dicta vitae usu te per vitae mauris dicunt</string>
     <string name="label_description">Description</string>
+    <string name="welcome_home">Welcome, Username</string>
+    <string name="profile">Profile</string>
+    <string name="prompt_full_name">Input Full Name</string>
+    <string name="update">Update</string>
+    <string name="logout">Log Out</string>
+    <string name="prompt_address">Input Address</string>
 </resources>

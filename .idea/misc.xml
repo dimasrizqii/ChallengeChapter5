@@ -11,11 +11,14 @@
         <entry key="..\:/Users/Dimas Rizqi/AndroidStudioProjects/Challenge5/app/src/main/res/drawable/ic_stars_yellow_24dp.xml" value="0.13" />
         <entry key="..\:/Users/Dimas Rizqi/AndroidStudioProjects/Challenge5/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Dimas Rizqi/AndroidStudioProjects/Challenge5/app/src/main/res/layout/detail_item.xml" value="0.21603260869565216" />
+        <entry key="..\:/Users/Dimas Rizqi/AndroidStudioProjects/Challenge5/app/src/main/res/layout/fragment_detail.xml" value="0.264" />
         <entry key="..\:/Users/Dimas Rizqi/AndroidStudioProjects/Challenge5/app/src/main/res/layout/fragment_details.xml" value="0.264" />
-        <entry key="..\:/Users/Dimas Rizqi/AndroidStudioProjects/Challenge5/app/src/main/res/layout/fragment_home.xml" value="0.17904290429042904" />
+        <entry key="..\:/Users/Dimas Rizqi/AndroidStudioProjects/Challenge5/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/Users/Dimas Rizqi/AndroidStudioProjects/Challenge5/app/src/main/res/layout/fragment_login.xml" value="0.2" />
+        <entry key="..\:/Users/Dimas Rizqi/AndroidStudioProjects/Challenge5/app/src/main/res/layout/fragment_profile.xml" value="0.21603260869565216" />
         <entry key="..\:/Users/Dimas Rizqi/AndroidStudioProjects/Challenge5/app/src/main/res/layout/fragment_register.xml" value="0.2" />
         <entry key="..\:/Users/Dimas Rizqi/AndroidStudioProjects/Challenge5/app/src/main/res/layout/movie_item.xml" value="0.4" />
+        <entry key="..\:/Users/Dimas Rizqi/AndroidStudioProjects/Challenge5/app/src/main/res/menu/menu_profile.xml" value="0.264" />
       </map>
     </option>
   </component>

@@ -21,8 +21,8 @@ class LoginFragment : Fragment() {
 
     private lateinit var loginViewModel: LoginViewModel
 
-    private lateinit var sharedPreferences: SharedPreferences
-    private val sharedPreferencesLogin = "sharedPreferencesLogin"
+    lateinit var sharedPreferences: SharedPreferences
+    val sharedPreferencesLogin = "sharedPreferencesLogin"
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
@@ -49,15 +49,16 @@ class LoginFragment : Fragment() {
     }
 
     private fun toLoggingIn() {
-        val emailLogin = binding.etLoginEmail.text.toString()
+        val usernameLogin = binding.etLoginUsername.text.toString()
         val passwordLogin = binding.etLoginPassword.text.toString()
 
-        loginViewModel.readAccountById(emailLogin).observe(viewLifecycleOwner){
-            if (it.email == emailLogin && it.password == passwordLogin){
+        loginViewModel.readAccountById(usernameLogin).observe(viewLifecycleOwner){
+            if (it.userName == usernameLogin && it.password == passwordLogin){
                 Toast.makeText(requireContext(), "Login Success", Toast.LENGTH_SHORT).show()
                 findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
                 sharedPreferences.edit {
                     this.putBoolean(PreferenceKey.PREF_USER_LOGIN_KEY.first, true)
+                    this.putString(PreferenceKey.PREF_USER_NAME.first, usernameLogin)
                 }
             }
             else{
@@ -90,4 +91,5 @@ class LoginFragment : Fragment() {
 
 object PreferenceKey{
     val PREF_USER_LOGIN_KEY = Pair("PREF_LOGIN_APP_KEY", false)
+    val PREF_USER_NAME = Pair("PREF_USER_NAME", false)
 }

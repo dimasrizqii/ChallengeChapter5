@@ -11,15 +11,15 @@ import kotlinx.coroutines.launch
 
 class LoginViewModel (
     val database : AccountDao, application: Application) : AndroidViewModel(application) {
-    fun readAccountById(email: String) : LiveData<AccountEntity> {
+    fun readAccountById(userName: String) : LiveData<AccountEntity> {
         val dummy = MutableLiveData <AccountEntity>()
         viewModelScope.launch {
-            dummy.value = getDataFromDatabase(email)
+            dummy.value = getDataFromDatabase(userName)
         }
         return dummy
     }
 
-    private suspend fun getDataFromDatabase(email: String) : AccountEntity? {
-        return database.readAccountByEmail(email)
+    private suspend fun getDataFromDatabase(userName: String) : AccountEntity? {
+        return database.readAccountByUsername(userName)
     }
 }
